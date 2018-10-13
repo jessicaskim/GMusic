@@ -1,8 +1,10 @@
-<form class="form-inline my-2 my-lg-0">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+<!-- <% var songSearch = "search"; %>
+<form class="form-inline my-2 my-lg-0" action="/queue/suggest/<%= songSearch%>" method="GET">
+    <label for="<%= songSearch%>"></label>
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="<%= songSearch%>">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 </form>
-<br>
+<br> -->
 <% for (let i = 0; i < videos.items.length; i++) { %>
     <div class="card" style="width: 35rem;">
       <!-- <div class="embed-responsive embed-responsive-16by9">
@@ -14,7 +16,7 @@
         <h6 class="card-subtitle mb-2 text-muted"><%= videos.items[i].snippet.description %></h6>
         <p class="card-text">
         </p>
-        <form action="/queue/suggest" method="GET">
+        <form action="/queue" method="POST">
             <label for="title"></label>
             <input type="hidden" value="<%= videos.items[i].snippet.title %>" name="title"> 
             <label for="imageURL"></label>

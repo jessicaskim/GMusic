@@ -10,15 +10,51 @@
   </head>
   <body>
 
-      <header id="header">
-          <a class="home-link" routerLink="/"></a>
-          <div class="header-text">
-            <div class="left">
-              <h1 class="name">
-                <span id="app-title"> Gmusic </span>
-              </h1>
-            </div>
-        </header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-lightm">
+          <a class="navbar-brand" href="/queue">Gruve</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <% if(locals.currentUser) { %>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/queue">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Music
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/queue">Queue</a>
+                  <a class="dropdown-item" href="/queue/suggest">Suggest Song</a>
+                  <div class="dropdown-divider"></div>
+                </div>
+              </li>
+            </ul>
+              <form class="form-inline my-2 my-lg-0" method="GET" action="/auth/logout">
+                  <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="/edit"><%=currentUser.name%> | <%=currentUser.email%></a>
+                      </li>
+                  </ul>
+                  <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Logout</button>
+              </form>
+        <% } else { %>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0" method="GET" action="/auth/login" id="navLogin">
+                    <button class="btn btn-outline-primary my-2 my-sm-0 mr-3" type="submit">Login</button>
+                </form>
+                <form class="form-inline my-2 my-lg-0" method="GET" action="/auth/signup">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign Up</button>
+                </form>
+             </div>
+            <% } %>
+          </div>
+      </nav>
 
     <div class="container">
 

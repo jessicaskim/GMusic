@@ -1,34 +1,18 @@
-<div class="main-content">
-    <ul class="queue">
-        <li class="song">
-            <div class="theme-block">
-                <div>
-                    <a class="title">	
-                        Song Title
-                    </a>
-                </div>
-                <div class="subtext-laptop">
-                    By Artist
-                    <span id="right">
-                        Stars
-                    </span>
-                </div>
+<% for (let i = 0; i < songs.length; i++) { %>
+<ul class="queue">
+    <li class="song">
+        <div class="theme-block">
+            <div>
+                <a class="title">	
+                    <%=  songs[i].title %>
+                </a>
             </div>
-        </li>
-        <li class="song">
-                <div class="theme-block">
-                    <div>
-                        <a class="title">	
-                            Song Title
-                        </a>
-                    </div>
-                    <div class="subtext-laptop">
-                        By Artist
-                        <span id="right">
-                            Stars
-                        </span>
-                    </div>
-                </div>
-            </li>
-    </ul>
-</div>
+            <div class="subtext-laptop">
+                <span id="right">
+                    Stars: <%=  songs[i].votes.length %>
+                </span>
+            </div>
+        </div>
+    </li>
+</ul>
+<% } %>
