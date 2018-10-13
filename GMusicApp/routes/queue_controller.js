@@ -5,8 +5,7 @@ const Router            = Express.Router();
 const youtubeSearch     = require('youtube-api-v3-search');
 
 Router.get('/', (req, res) => {
-    res.send("GET songs route is working")
-
+    res.render('queue/index');
 })
 
 Router.get('/suggest', (req, res) => {

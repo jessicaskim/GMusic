@@ -1,8 +1,117 @@
-body {
-  padding: 50px;
+body {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.song {
+  padding: 10px 0 10px 0px;
+  transition: background-color 0.2s ease;
+  border-bottom: 2px solid #edf0f5;
+  background-color: white;
+}
+
+.theme-block {
+  display: block;
+  margin-left: 22px;
+}
+
+.main-content {
+  position: relative;
+  width: 100%;
+  min-height: calc(93vh - 10px);
+  -webkit-transition: opacity .2s ease;
+  transition: opacity .2s ease;
+  box-sizing: border-box;
+  padding: 0px 0;
+  z-index: 0;
+
+  display: flex;
+  flex-direction: column;
+  background-color: #edf0f5;
+}
+
+.subtext {
+  color: #696969;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+  font-family: 'IBM Plex Serif', serif;
+  position: relative;
+  bottom: 1px;
+  left: 2px;
+}
+
+ol {
+  padding: 0 40px;
+  margin: 0;
+}
+
+li {
+  position: relative;
+  -webkit-transition: background-color .2s ease;
+  transition: background-color .2s ease;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin-top: 10px;
+  margin-left: 23px;
+  margin-right: 23px;
+}
+
+/* header */
+#header {
+  background-color: #1A5276;
+  color: #fff;
+  line-height: 18px;
+  vertical-align: middle;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+  height: 40px;
+}
+
+.header-text {
+  position: relative;
+  width: inherit;
+  height: inherit;
+}
+
+.home-link {
+  width: 50px;
+  height: 66px;
+}
+
+.logo{
+    height: 100%;
+    margin: 0;
+    padding:0;
+  }
+
+h1 {
+  font-weight: bold;
+  display: inline-block;
+  vertical-align:middle;
+  margin: 0;
+  font-size: 16px;
+}
+
+
+.name {
+  height: 100%;
+  margin-bottom: 8px;
+  font-size: 30px;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 1px;
+
+}
+
+
+#app-title{
+  text-align: center;
 }
