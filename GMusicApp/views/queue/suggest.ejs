@@ -1,0 +1,27 @@
+
+
+
+
+
+
+
+
+
+
+<% for (let i = 0; i < videos.items.length; i++) { %>
+    <div class="card" style="width: 35rem;">
+      <!-- <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/<%= videos.items[i].id.videoId %>"> allowfullscreen></iframe>
+      </div> -->
+      <img class="card-img-top" src="<%= videos.items[i].snippet.thumbnails.high.url %>" alt="Video Thumbnail">
+      <div class="card-body">
+        <h5 class="card-title"><a href="/queue"><%= videos.items[i].snippet.title %></a></h5>
+        <h6 class="card-subtitle mb-2 text-muted"><%= videos.items[i].snippet.description %></h6>
+        <p class="card-text">
+        </p>
+        <form action="/queue/suggest" method="GET">
+            <input class="btn btn-outline-primary" type="submit" value="Suggest Song"/>
+        </form>
+      </div>
+    </div>
+<% } %>

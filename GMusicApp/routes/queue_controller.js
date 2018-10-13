@@ -7,8 +7,9 @@ const youtubeSearch     = require('youtube-api-v3-search');
 Router.get('/', (req, res) => {
     // res.send("GET songs route is working")
     youtubeSearch(process.env.YOUTUBE_API_KEY,{q:"honey kehlani"})
-        .then(data => {
-            res.send(data);
+        .then(videos => {
+            // res.send(videos);
+            res.render('queue/index',{videos});
         })
 })
 
