@@ -63,6 +63,13 @@ ul {
   margin-right: 23px;
 }
 
+#right{
+  float:right;
+  margin-right: 22px;
+  color: #1A5276;
+  margin-bottom: 10px;
+}
+
 /* header */
 #header {
   background-color: #1A5276;
@@ -101,7 +108,6 @@ h1 {
   font-size: 16px;
 }
 
-
 .name {
   height: 100%;
   margin-bottom: 8px;
@@ -110,7 +116,6 @@ h1 {
   letter-spacing: 1px;
 
 }
-
 
 #app-title{
   text-align: center;
