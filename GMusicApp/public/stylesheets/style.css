@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 body {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -12,6 +13,7 @@ a {
   transition: background-color 0.2s ease;
   border-bottom: 2px solid #edf0f5;
   background-color: white;
+  margin-bottom: 5px;
 }
 
 .theme-block {
@@ -77,10 +79,10 @@ ul {
 
 /* header */
 #header {
-  background-color: #1A5276;
+  background-color: #1fc8db;
+  background-image: linear-gradient(141deg, #9fb8ad -200%, #1fc8db 51%, #2cb5e8 75%);
   color: #fff;
   line-height: 18px;
-  vertical-align: middle;
   position: relative;
   text-align: center;
   z-index: 1;
@@ -92,6 +94,7 @@ ul {
   position: relative;
   width: inherit;
   height: inherit;
+  box-shadow: 2px 2px 2px 2px grey;
 }
 
 .home-link {
@@ -114,12 +117,10 @@ h1 {
 }
 
 .name {
-  height: 100%;
-  margin-bottom: 8px;
   font-size: 30px;
-  font-family: 'Ubuntu', sans-serif;
-  letter-spacing: 1px;
-
+  letter-spacing: 2px;
+  vertical-align: center;
+  height: 100%;
 }
 
 #app-title{
