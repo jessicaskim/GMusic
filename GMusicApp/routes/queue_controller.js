@@ -3,6 +3,7 @@ require('dotenv').config({ silent: true });
 const Express           = require('express');
 const Router            = Express.Router();
 const youtubeSearch     = require('youtube-api-v3-search');
+const isLoggedIn        = require('../middleware/isLoggedIn');
 
 Router.get('/', (req, res) => {
     res.render('queue/index');

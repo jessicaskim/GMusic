@@ -15,6 +15,14 @@
         <p class="card-text">
         </p>
         <form action="/queue/suggest" method="GET">
+            <label for="title"></label>
+            <input type="hidden" value="<%= videos.items[i].snippet.title %>" name="title"> 
+            <label for="imageURL"></label>
+            <input type="hidden" value="<%= videos.items[i].snippet.thumbnails.high.url %>" name="imageURL"> 
+            <label for="videoURL"></label>
+            <input type="hidden" value="https://www.youtube.com/embed/<%= videos.items[i].id.videoId %>" name="videoURL">
+            <label for="videoDescription"></label>
+            <input type="hidden" value="<%= videos.items[i].snippet.description %>" name="videoDescription">  
             <input class="btn btn-outline-primary" type="submit" value="Suggest Song"/>
         </form>
       </div>
