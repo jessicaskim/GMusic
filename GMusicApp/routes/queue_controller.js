@@ -9,7 +9,7 @@ Router.get('/', (req, res) => {
 })
 
 Router.get('/suggest', (req, res) => {
-    youtubeSearch(process.env.YOUTUBE_API_KEY,{q:"honey kehlani"})
+    youtubeSearch(process.env.YOUTUBE_API_KEY,{q:"glass animals"})
     .then(videos => {
         // res.send(videos);
         res.render('queue/suggest',{videos});
