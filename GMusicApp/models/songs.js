@@ -8,6 +8,9 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   songs.associate = function(models) {
     // associations can be defined here
+    songs.hasMany(models.votes,{
+      foreignKey: 'songId'
+    });
   };
   return songs;
 };
