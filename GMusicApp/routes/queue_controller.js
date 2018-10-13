@@ -12,4 +12,8 @@ Router.get('/', (req, res) => {
         })
 })
 
+Router.get('/suggest', (req, res) => {
+    res.render('queue/suggest');
+})
+
 module.exports = Router;
