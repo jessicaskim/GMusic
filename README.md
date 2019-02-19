@@ -1,5 +1,5 @@
-# GMusic 
+GMusic 
 
-### @ HacKCooper
+@ HacKCooper 2018
 
-Song suggestion app with upvote functionality. *** Not maintained and hastily thrown together at a hack-a-thon
+Song suggestion app with upvote and sharing functionality.
